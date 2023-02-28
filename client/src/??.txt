@@ -1,0 +1,9 @@
+- The getEditCard method (get-one request from editCardId in state) works initially, but brakes when I change form inputs that use state that 
+it sets as props? It looks like the new component is rendering before the state that i'm using to build the new component gets set. 
+I know I could do useEffect in the component I want to show the state in but...
+
+Should I just do the get-one request locally so I can put it in a local use state, vs. do all my fetches in the App component like you told us?
+
+- Is it good practice to split up functions in a handler the way that I do it, or to run them in the asynchronous fetch function. All I do in
+the fetch is get the data and pass it to a setState. Shoulid I have it hide and how right after I do the setState?
+
